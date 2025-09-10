@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UniGrad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- header navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Health Center Logo" class="logo-img">
+                <span class="logo-text">UniGrad</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="listings.html" class="nav-link">Browse</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="login.html" class="appointment-btn">login</a>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 48px;">Contact Us</h1>
+            <p class="hero-subheader">Get in Touch with Our Team</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="documents-section">
+        <h2 class="documents-title">Get In Touch</h2>
+        <div class="documents-container">
+            <div class="document-card">
+                <div style="padding: 40px; text-align: center;">
+                    <i class="fas fa-map-marker-alt" style="font-size: 48px; color: #4CAF50; margin-bottom: 20px;"></i>
+                    <h3 class="document-name">Our Address</h3>
+                    <p class="document-specialty">123 UniGrad Street<br>Algiers, Algeria 16000</p>
+                    <p class="document-type">Visit us during business hours</p>
+                </div>
+            </div>
+
+            <div class="document-card">
+                <div style="padding: 40px; text-align: center;">
+                    <i class="fas fa-phone" style="font-size: 48px; color: #4CAF50; margin-bottom: 20px;"></i>
+                    <h3 class="document-name">Phone Number</h3>
+                    <p class="document-specialty">+213 123 456 789<br>+213 987 654 321</p>
+                    <p class="document-type">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="document-card">
+                <div style="padding: 40px; text-align: center;">
+                    <i class="fas fa-envelope" style="font-size: 48px; color: #4CAF50; margin-bottom: 20px;"></i>
+                    <h3 class="document-name">Email Address</h3>
+                    <p class="document-specialty">contact@UniGradcenter.com<br>support@UniGradcenter.com</p>
+                    <p class="document-type">We'll respond within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="contact-title">Send us a Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name"
+                            style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Full
+                            Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"
+                            style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Email
+                            Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email address"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"
+                            style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Phone
+                            Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"
+                            style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Subject</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="submission">Document Submission</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"
+                            style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Enter your message here..." rows="6"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Google Map -->
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d3.017505!3d36.737232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e8a6a28037bd1%3A0x64480b06bbc7b737!2sAlgiers%2C%20Algeria!5e0!3m2!1sen!2sus!4v1692200000000!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="projects-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">How can I submit my thesis or research?</h3>
+                    <span class="project-date"><i class="fas fa-question-circle"></i></span>
+                </div>
+                <p class="project-description">
+                    You can submit your academic work through our online submission portal. Create an account, fill out
+                    the submission form, and upload your documents. Our review team will process your submission within
+                    5-7 business days.
+                </p>
+                <button class="view-more-btn">Learn More</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Is there a fee for accessing documents?</h3>
+                    <span class="project-date"><i class="fas fa-question-circle"></i></span>
+                </div>
+                <p class="project-description">
+                    Basic access to our repository is free for all users. Premium features, including advanced search
+                    filters and detailed analytics, are available through our subscription plans.
+                </p>
+                <button class="view-more-btn">View Pricing</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">How do I report copyright issues?</h3>
+                    <span class="project-date"><i class="fas fa-question-circle"></i></span>
+                </div>
+                <p class="project-description">
+                    We take intellectual property seriously. If you believe content infringes on your copyright, please
+                    contact our legal team at legal@UniGradcenter.com with detailed information about the alleged
+                    infringement.
+                </p>
+                <button class="view-more-btn">Contact Legal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sitemap -->
+            <div class="footer-section">
+                <h3 class="footer-title">Sitemap</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="listings.html" class="footer-link">Browse</a></li>
+                    <li><a href="#" class="footer-link">News</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Info</h3>
+                <address class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 UniGrad Street, Algiers, Algeria</p>
+                    <p><i class="fas fa-phone"></i> +213 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> contact@UniGradcenter.com</p>
+                </address>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="newsletter-text">Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your Email">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 UniGrad Center. All Rights Reserved. | Designed by Yahia Linus</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

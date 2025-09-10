@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - UniGrad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+    <!-- header navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Health Center Logo" class="logo-img">
+                <span class="logo-text">UniGrad</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="listings.html" class="nav-link">Browse</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="profile-menu">
+                <img src="https://picsum.photos/32/32?random=30" alt="Profile"
+                    style="width: 32px; height: 32px; border-radius: 50%; margin-right: 10px;">
+                <span style="color: #333;">Dr. Sarah Johnson</span>
+                <button class="appointment-btn" style="margin-left: 15px;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <div class="profile-wrapper">
+            <!-- Sidebar -->
+            <div class="profile-sidebar">
+                <div class="profile-header">
+                    <img src="https://picsum.photos/100/100?random=31" alt="Profile Picture" class="profile-avatar">
+                    <h3 class="profile-name">Dr. Sarah Johnson</h3>
+                    <p class="profile-role">Computer Science Researcher</p>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Documents</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1.2K</div>
+                            <div class="stat-label">Downloads</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.8</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="profile-nav">
+                    <a href="#" class="nav-item active" onclick="showTab('profile')">
+                        <i class="fas fa-user"></i> Profile Information
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('documents')">
+                        <i class="fas fa-file-alt"></i> My Documents
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('upload')">
+                        <i class="fas fa-upload"></i> Upload Document
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('activity')">
+                        <i class="fas fa-chart-line"></i> Activity
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('settings')">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="profile-main">
+                <!-- Profile Information Tab -->
+                <div id="profile" class="tab-content active">
+                    <div class="section-header">
+                        <h2 class="section-title">Profile Information</h2>
+                        <button class="btn-primary">
+                            <i class="fas fa-edit"></i> Edit Profile
+                        </button>
+                    </div>
+
+                    <form>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-input" value="Sarah" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-input" value="Johnson" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" value="sarah.johnson@stanford.edu" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-input" value="+1 (555) 123-4567" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">University</label>
+                                <input type="text" class="form-input" value="Stanford University" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Department</label>
+                                <input type="text" class="form-input" value="Computer Science" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Position</label>
+                                <input type="text" class="form-input" value="PhD Student" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">ORCID ID</label>
+                                <input type="text" class="form-input" value="0000-0002-1825-0097" readonly>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Bio</label>
+                                <textarea class="form-input" rows="4"
+                                    readonly>PhD candidate in Computer Science specializing in machine learning and artificial intelligence applications in healthcare. Passionate about developing innovative solutions that bridge the gap between technology and medical practice.</textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Research Interests</label>
+                                <input type="text" class="form-input"
+                                    value="Machine Learning, Deep Learning, Medical Imaging, Computer Vision, Healthcare AI"
+                                    readonly>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- My Documents Tab -->
+                <div id="documents" class="tab-content">
+                    <div class="section-header">
+                        <h2 class="section-title">My Documents</h2>
+                        <button class="btn-primary">
+                            <i class="fas fa-plus"></i> Add New Document
+                        </button>
+                    </div>
+
+                    <div class="documents-grid">
+                        <div class="document-item">
+                            <h4 class="document-title">Deep Learning for Medical Image Analysis</h4>
+                            <p class="document-meta">
+                                <i class="fas fa-calendar"></i> May 2024 •
+                                <i class="fas fa-download"></i> 1,247 downloads •
+                                <i class="fas fa-star"></i> 4.8/5
+                            </p>
+                            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">PhD Thesis - Computer Science
+                            </p>
+                            <div class="document-actions">
+                                <button class="btn-small btn-edit">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                                <button class="btn-small" style="background: #2196F3; color: white;">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <button class="btn-small btn-delete">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="document-item">
+                            <h4 class="document-title">CNN Architectures for Medical Diagnosis</h4>
+                            <p class="document-meta">
+                                <i class="fas fa-calendar"></i> March 2024 •
+                                <i class="fas fa-download"></i> 856 downloads •
+                                <i class="fas fa-star"></i> 4.6/5
+                            </p>
+                            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">Research Paper - AI in
+                                Healthcare</p>
+                            <div class="document-actions">
+                                <button class="btn-small btn-edit">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                                <button class="btn-small" style="background: #2196F3; color: white;">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <button class="btn-small btn-delete">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="document-item">
+                            <h4 class="document-title">Transfer Learning in Medical AI</h4>
+                            <p class="document-meta">
+                                <i class="fas fa-calendar"></i> January 2024 •
+                                <i class="fas fa-download"></i> 632 downloads •
+                                <i class="fas fa-star"></i> 4.5/5
+                            </p>
+                            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">Conference Paper - Machine
+                                Learning</p>
+                            <div class="document-actions">
+                                <button class="btn-small btn-edit">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                                <button class="btn-small" style="background: #2196F3; color: white;">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <button class="btn-small btn-delete">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload Document Tab -->
+                <div id="upload" class="tab-content">
+                    <div class="section-header">
+                        <h2 class="section-title">Upload New Document</h2>
+                    </div>
+
+                    <form>
+                        <div class="upload-area">
+                            <i class="fas fa-cloud-upload-alt"
+                                style="font-size: 48px; color: #4CAF50; margin-bottom: 20px;"></i>
+                            <h3>Drag & Drop your document here</h3>
+                            <p style="color: #666; margin: 10px 0;">or click to browse files</p>
+                            <button type="button" class="btn-secondary">Choose File</button>
+                            <p style="font-size: 12px; color: #666; margin-top: 10px;">Supported formats: PDF, DOC, DOCX
+                                (Max 50MB)</p>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Document Title</label>
+                                <input type="text" class="form-input" placeholder="Enter document title">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Document Type</label>
+                                <select class="form-input">
+                                    <option>Select type</option>
+                                    <option>Thesis</option>
+                                    <option>Research Paper</option>
+                                    <option>Project Report</option>
+                                    <option>Dissertation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject Area</label>
+                                <select class="form-input">
+                                    <option>Select subject</option>
+                                    <option>Computer Science</option>
+                                    <option>Engineering</option>
+                                    <option>Medicine</option>
+                                    <option>Business</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Publication Year</label>
+                                <input type="number" class="form-input" placeholder="2024" min="1900" max="2025">
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Abstract</label>
+                                <textarea class="form-input" rows="4" placeholder="Enter document abstract"></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Keywords (comma separated)</label>
+                                <input type="text" class="form-input" placeholder="machine learning, healthcare, AI">
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-upload"></i> Upload Document
+                            </button>
+                            <button type="button" class="btn-secondary">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Activity Tab -->
+                <div id="activity" class="tab-content">
+                    <div class="section-header">
+                        <h2 class="section-title">Recent Activity</h2>
+                    </div>
+
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Uploaded "Deep Learning for Medical Image Analysis"</div>
+                                <div class="activity-time">2 hours ago</div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Your document was downloaded 15 times</div>
+                                <div class="activity-time">5 hours ago</div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Received new review (4.8/5) on your thesis</div>
+                                <div class="activity-time">1 day ago</div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Updated profile information</div>
+                                <div class="activity-time">3 days ago</div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Saved 3 new documents to your library</div>
+                                <div class="activity-time">1 week ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings Tab -->
+                <div id="settings" class="tab-content">
+                    <div class="section-header">
+                        <h2 class="section-title">Account Settings</h2>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Email Notifications</label>
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" checked> Document downloads
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" checked> New reviews
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox"> Newsletter updates
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Privacy Settings</label>
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" checked> Show profile publicly
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" checked> Allow document indexing
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox"> Show download statistics
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="section-header" style="margin-top: 40px;">
+                        <h3 style="color: #f44336;">Danger Zone</h3>
+                    </div>
+
+                    <div style="border: 1px solid #f44336; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #f44336; margin-bottom: 10px;">Delete Account</h4>
+                        <p style="color: #666; margin-bottom: 15px;">Once you delete your account, there is no going
+                            back. Please be certain.</p>
+                        <button
+                            style="background: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 4px;">
+                            Delete Account
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sitemap -->
+            <div class="footer-section">
+                <h3 class="footer-title">Sitemap</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="listings.html" class="footer-link">Browse</a></li>
+                    <li><a href="#" class="footer-link">News</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Info</h3>
+                <address class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 UniGrad Street, Algiers, Algeria</p>
+                    <p><i class="fas fa-phone"></i> +213 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> contact@UniGradcenter.com</p>
+                </address>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="newsletter-text">Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your Email">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 UniGrad Center. All Rights Reserved. | Designed by Yahia Linus</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Remove active class from all nav items
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => item.classList.remove('active'));
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked nav item
+            event.target.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>

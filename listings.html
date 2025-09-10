@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Documents - UniGrad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/listings.css">
+</head>
+
+<body>
+
+    <!-- header navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Health Center Logo" class="logo-img">
+                <span class="logo-text">UniGrad</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="listings.html" class="nav-link">Browse</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="login.html" class="appointment-btn">login</a>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <h2 style="margin-bottom: 20px; color: #333;">Search Academic Documents</h2>
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label class="filter-label">Keywords</label>
+                    <input type="text" class="filter-input" placeholder="Enter keywords...">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Document Type</label>
+                    <select class="filter-input">
+                        <option value="">All Types</option>
+                        <option value="thesis">Thesis</option>
+                        <option value="research">Research Paper</option>
+                        <option value="project">Project</option>
+                        <option value="dissertation">Dissertation</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Subject Area</label>
+                    <select class="filter-input">
+                        <option value="">All Subjects</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="business">Business</option>
+                        <option value="mathematics">Mathematics</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label class="filter-label">University</label>
+                    <input type="text" class="filter-input" placeholder="University name...">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Year</label>
+                    <select class="filter-input">
+                        <option value="">All Years</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i> Search Documents
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="documents-section">
+        <div class="results-header">
+            <h2 class="documents-title">Search Results (847 documents)</h2>
+            <div class="sort-controls">
+                <span>Sort by:</span>
+                <select class="filter-input" style="width: auto;">
+                    <option>Most Recent</option>
+                    <option>Most Downloaded</option>
+                    <option>Alphabetical</option>
+                    <option>University</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="document-grid">
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=10" alt="AI Research" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Deep Learning for Medical Image Analysis</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Sarah Johnson</span>
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-file-alt"></i> Thesis</span>
+                    </div>
+                    <p class="card-description">
+                        Comprehensive study on implementing convolutional neural networks for automated medical
+                        diagnosis...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Stanford University</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=11" alt="Blockchain Research" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Blockchain-Based Identity Verification Systems</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Ahmed Hassan</span>
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-file-alt"></i> Research</span>
+                    </div>
+                    <p class="card-description">
+                        Novel approach to digital identity verification using blockchain technology and smart
+                        contracts...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">MIT</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=12" alt="IoT Research" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">IoT Security Framework for Smart Cities</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Maria Lopez</span>
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-file-alt"></i> Project</span>
+                    </div>
+                    <p class="card-description">
+                        Comprehensive security framework addressing vulnerabilities in IoT infrastructure for urban
+                        environments...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Harvard University</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=13" alt="Machine Learning" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Natural Language Processing for Legal Documents</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> David Chen</span>
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-file-alt"></i> Thesis</span>
+                    </div>
+                    <p class="card-description">
+                        Advanced NLP techniques for automated analysis and classification of legal documents and
+                        contracts...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Oxford University</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=14" alt="Cybersecurity" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Advanced Intrusion Detection Using ML</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Lisa Wang</span>
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-file-alt"></i> Research</span>
+                    </div>
+                    <p class="card-description">
+                        Machine learning algorithms for real-time network intrusion detection and prevention systems...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Carnegie Mellon</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=15" alt="Data Science" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Big Data Analytics in Healthcare</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Robert Brown</span>
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-file-alt"></i> Dissertation</span>
+                    </div>
+                    <p class="card-description">
+                        Comprehensive analysis of big data applications in healthcare for improved patient outcomes...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Johns Hopkins</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=16" alt="Renewable Energy" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Solar Panel Efficiency Optimization</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Emma Wilson</span>
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-file-alt"></i> Project</span>
+                    </div>
+                    <p class="card-description">
+                        Innovative approaches to improving solar panel efficiency through advanced materials and
+                        design...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">UC Berkeley</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=17" alt="Robotics" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Autonomous Robot Navigation Systems</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Michael Davis</span>
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-file-alt"></i> Thesis</span>
+                    </div>
+                    <p class="card-description">
+                        Advanced algorithms for autonomous robot navigation in complex indoor and outdoor
+                        environments...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Georgia Tech</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="https://picsum.photos/350/200?random=18" alt="Quantum Computing" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Quantum Algorithms for Cryptography</h3>
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> Anna Taylor</span>
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-file-alt"></i> Research</span>
+                    </div>
+                    <p class="card-description">
+                        Exploring quantum computing applications in modern cryptographic systems and security
+                        protocols...
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-university">Caltech</span>
+                        <a href="listing-detail.html" class="view-more-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="page-btn">‹ Previous</a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">4</a>
+            <a href="#" class="page-btn">5</a>
+            <a href="#" class="page-btn">Next ›</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sitemap -->
+            <div class="footer-section">
+                <h3 class="footer-title">Sitemap</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="listings.html" class="footer-link">Browse</a></li>
+                    <li><a href="#" class="footer-link">News</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Info</h3>
+                <address class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 UniGrad Street, Algiers, Algeria</p>
+                    <p><i class="fas fa-phone"></i> +213 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> contact@UniGradcenter.com</p>
+                </address>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="newsletter-text">Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your Email">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 UniGrad Center. All Rights Reserved. | Designed by Yahia Linus</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
